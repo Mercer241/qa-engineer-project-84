@@ -12,8 +12,7 @@
 - `regress-report.yml` — отчет о регрессионном тестировании новой версии.
 
 ## Результаты автотестов
-Статус последней проверки: [Вставьте сюда бейдж с результатом из вкладки Actions вашего репозитория]  
-(В GitHub можно скопировать бейдж: Actions → выбрать workflow `hexlet-check` → три точки → `Create status badge`)
+Статус последней проверки: [[![hexlet-check](https://github.com/Mercer241/qa-engineer-project-84/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Mercer241/qa-engineer-project-84/actions/workflows/hexlet-check.yml)]  
 
 ## Основные найденные дефекты
 1. Ошибка 500 Internal Server Error при оформлении заказа (не исправлена).
