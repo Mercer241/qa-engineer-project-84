@@ -25,3 +25,87 @@
     Кнопка "Добавить в корзину"
   actual-result: |
     Кнопка "Добавить карту"
+
+- summary: |
+    Фильтрация товаров по категории работает некорректно
+  environment: |
+    Браузер: Mozilla Firefox 136.0.1 (64-bit)
+    ОС: Windows 11
+    Приложение: https://products-store-v2.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть главную страницу каталога
+    2. Выбрать категорию "electronics"
+  expected-result: |
+    Отображаются только товары выбранной категории
+  actual-result: |
+    Фильтрация работает некорректно
+
+- summary: |
+    Фильтрация товаров по цене работает некорректно
+  environment: |
+    Браузер: Mozilla Firefox 136.0.1 (64-bit)
+    ОС: Windows 11
+    Приложение: https://products-store-v2.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть главную страницу каталога
+    2. Установить фильтр цены от $50 до $100
+  expected-result: |
+    Отображаются товары с ценой в указанном диапазоне
+  actual-result: |
+    Фильтрация по цене работает некорректно
+
+- summary: |
+    Фильтрация товаров по производителю работает некорректно
+  environment: |
+    Браузер: Mozilla Firefox 136.0.1 (64-bit)
+    ОС: Windows 11
+    Приложение: https://products-store-v2.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть главную страницу каталога
+    2. Выбрать производителя из списка
+  expected-result: |
+    Отображаются только товары выбранного производителя
+  actual-result: |
+    Фильтрация по производителю работает некорректно
+
+- summary: |
+    Фильтрация товаров по наличию работает некорректно
+  environment: |
+    Браузер: Mozilla Firefox 136.0.1 (64-bit)
+    ОС: Windows 11
+    Приложение: https://products-store-v2.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть главную страницу каталога
+    2. Отметить чекбокс "In Stock"
+  expected-result: |
+    Отображаются только товары в наличии
+  actual-result: |
+    Фильтрация по наличию работает некорректно
+
+- summary: |
+    Поиск товаров по ключевому слову работает некорректно
+  environment: |
+    Браузер: Mozilla Firefox 136.0.1 (64-bit)
+    ОС: Windows 11
+    Приложение: https://products-store-v2.hexlet.app/
+  steps-to-reproduce: |
+    1. Открыть главную страницу каталога
+    2. Ввести в поиск "Fjallraven"
+  expected-result: |
+    Отображаются товары, содержащие "Fjallraven" в названии
+  actual-result: |
+    Поиск работает некорректно
+
+- summary: |
+    Переключение языка интерфейса работает некорректно
+  environment: |
+    Браузер: Mozilla Firefox 136.0.1 (64-bit)
+    ОС: Windows 11
+    Приложение: https://products-store-v2.hexlet.app/
+  steps-to-reproduce: |
+    1. Переключить язык на русский
+    2. Перейти на главную страницу каталога
+  expected-result: |
+    Интерфейс отображается на русском языке
+  actual-result: |
+    Язык сбрасывается на английский
